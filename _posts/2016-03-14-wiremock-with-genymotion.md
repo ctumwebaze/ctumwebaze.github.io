@@ -8,7 +8,7 @@ Often time you are working on an app that is supposed to be backed by an API, bu
 
 With [WireMock](http://wiremock.org/) you can mock your API by providing stubs for the different requests that are coming from your app and you can configure your emulator to use your the mock server as a proxy for the requests. For this tutorial, i use [genymotion](https://www.genymotion.com/), as a preferred emulator.
 
-Assuming in the app we are building, we want to capture the preferred way our customers want to communicate with us, our endpoint that would give us the different options would be something like `http://myapp.com/api/communicationmethods` and it's response would be;
+Assuming for the app you are building, you want to capture the preferred way our customers want to communicate with you, your endpoint for the different communication options would be something like `http://myapp.com/api/communicationmethods` and it's response would be;
 
 ```json
 [
@@ -35,7 +35,7 @@ Assuming in the app we are building, we want to capture the preferred way our cu
 ]
 ```
 
-With WireMock, we create a stub (*which are predefined responses for requests that meet a certain criteria i.e. URL, headers and body content*) as below;
+With WireMock, you create a stub (*which is a predefined responses for requests that meet a certain criteria i.e. URL, headers and body content*) as below;
 
 ```json
 {
@@ -52,10 +52,6 @@ With WireMock, we create a stub (*which are predefined responses for requests th
   }
 }
 ```
-
-The body of the response is escaped using [http://www.freeformatter.com/javascript-escape.html](http://www.freeformatter.com/javascript-escape.html)
-
-You can find more information about how WireMock stubbing works [here](http://wiremock.org/stubbing.html)
 
 To see how this works,
 
@@ -79,7 +75,10 @@ You can test that this is working successfully by running on the terminal;
 
 `curl -X GET http://localhost:8888/api/communicationmethods`
 
-We have successfully configured WireMock, we now configure our emulator to use WireMock as a proxy. To do this,
+You can find more information about how WireMock stubbing works [here](http://wiremock.org/stubbing.html)
+
+
+Now that you have successfully configured WireMock, you need to configure your emulator to use WireMock as a proxy. To do this,
 
 1. Go to Android Settings  
 ![Android Settings](/images/backend-proxy-android-settings.png)
@@ -94,7 +93,7 @@ We have successfully configured WireMock, we now configure our emulator to use W
     2. Port: 8888 (Port configured for WireMock)
 ![Android Manual Proxy Settings](/images/backend-proxy-android-proxy-settings.png)
 
-With this, our emulator can now connect to the WireMock server. You can test this by opening the browser in the emulator and visiting any host that ends with `/api/communicationmethods`. In my emulator, i visited `http://localhost/api/communicationmethods` and my response was as configured in the stub above.
+With this, the emulator can now connect to the WireMock server. You can test this by opening the browser in the emulator and visiting any host that ends with `/api/communicationmethods`. In my emulator, i visited `http://localhost/api/communicationmethods` and my response was as configured in the stub above.
 
 ![Android WireMock Response](/images/backend-proxy-android-browser-response.png)
 
