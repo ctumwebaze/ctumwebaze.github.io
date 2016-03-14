@@ -9,7 +9,7 @@
 title: My Android Escapades
 email: ctumwebaze@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  This is my journey on the android platform. Exploring the gems of this platform and how certain things are done on it.
+  This is my journey working with the android platform. Exploring the it's gems, how certain things are done on it and what you can do with it..
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://android.blogs.tumwebaze.com" # the base hostname & protocol for your site
 twitter_username: ctumwebaze
