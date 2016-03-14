@@ -4,7 +4,7 @@ title: Backend proxy with genymotion and WireMock
 categories: android
 ---
 
-Often time you are working on an app that is supposed to be backed by an API, but you the API is non-existent or not ready. This should not deter you from continuing development.
+Often you are working on an app that is supposed to be backed by an API, but the API is non-existent or not ready. This should not deter you from continuing development.
 
 With [WireMock](http://wiremock.org/) you can mock your API by providing stubs for the different requests that are coming from your app and you can configure your emulator to use your the mock server as a proxy for the requests. For this tutorial, i use [genymotion](https://www.genymotion.com/), as a preferred emulator.
 
@@ -87,7 +87,7 @@ Now that you have successfully configured WireMock, you need to configure your e
 ![Android Wi-Fi Settings Option](/images/backend-proxy-android-wifi-settings-menu.png)
 
 3. Press and Hold WiredSSID network until a dialog shows up.
-4. Select Modify Network, Check Show advanced options and Select Manual for Proxy Settings menu entry
+4. Select Modify Network, Check **advanced options** and Select Manual for Proxy Settings menu entry
 7. Enter the proxy settings as below and press the Save button  
     1. Ip: 10.0.3.2 (Special Ip genymotion uses to connect to host.)
     2. Port: 8888 (Port configured for WireMock)
