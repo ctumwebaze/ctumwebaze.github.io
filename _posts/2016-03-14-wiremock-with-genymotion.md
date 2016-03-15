@@ -45,7 +45,7 @@ With WireMock, you create a stub (*which is a predefined responses for requests 
   },
   "response": {
     "status": 200,
-    "body": "\r\n  {\r\n    \"id\": \"4e49f1f4-0179-4030-9401-6df53b05223c\",\r\n    \"name\": \"WhatsApp\"\r\n  },\r\n  {\r\n    \"id\": \"9a379c51-5f9c-49e1-a6fc-facf044798fb\",\r\n    \"name\": \"Telephone\"\r\n  },\r\n  {\r\n    \"id\": \"8e807572-9556-474a-ba0b-bff8d3da592b\",\r\n    \"name\": \"SMS\"\r\n  },\r\n  {\r\n    \"id\": \"f4874dd6-1644-484b-9c82-6b25bc2218ec\",\r\n    \"name\": \"Email\"\r\n  },\r\n  {\r\n    \"id\": \"9f99afcf-c450-45fe-a118-0594a2de8b57\",\r\n    \"name\": \"Courier\"\r\n  }\r\n]",
+    "body": "[\r\n  {\r\n    \"id\": \"4e49f1f4-0179-4030-9401-6df53b05223c\",\r\n    \"name\": \"WhatsApp\"\r\n  },\r\n  {\r\n    \"id\": \"9a379c51-5f9c-49e1-a6fc-facf044798fb\",\r\n    \"name\": \"Telephone\"\r\n  },\r\n  {\r\n    \"id\": \"8e807572-9556-474a-ba0b-bff8d3da592b\",\r\n    \"name\": \"SMS\"\r\n  },\r\n  {\r\n    \"id\": \"f4874dd6-1644-484b-9c82-6b25bc2218ec\",\r\n    \"name\": \"Email\"\r\n  },\r\n  {\r\n    \"id\": \"9f99afcf-c450-45fe-a118-0594a2de8b57\",\r\n    \"name\": \"Courier\"\r\n  }\r\n]",
     "headers": {
       "Content-Type": "application/json"
     }
