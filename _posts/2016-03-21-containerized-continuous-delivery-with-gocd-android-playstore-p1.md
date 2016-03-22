@@ -19,7 +19,7 @@ Now that we have the machine (this post assumes it's running Ubuntu 14.04) let's
 Our container technology of choice is `Docker` and if you would like to know more about it, [What is Docker?](https://www.docker.com/what-docker) is a good place to start.
 
 ### Installing Docker
-Run the following commands in your terminal to install docker; make sure you have the necessary permissions to do install software on your machine.
+Run the following commands in your terminal to install docker; make sure you have the necessary permissions to do install software on your machine. `sudo su` usually does the trick.
 
 ```bash
 apt-get update
