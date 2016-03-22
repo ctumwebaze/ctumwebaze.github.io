@@ -36,7 +36,7 @@ apt-get install -y apparmor
 
 # installing docker
 apt-get update
-apt-get install docker-engine
+apt-get install -y docker-engine
 service docker start
 ```
 
