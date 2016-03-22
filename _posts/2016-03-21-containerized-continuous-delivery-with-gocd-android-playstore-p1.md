@@ -14,15 +14,14 @@ At the heart of Continuous Delivery, is [Continuous Integration](https://en.wiki
 
 First things first, you will need a machine to host you GoCD server and agent(s). You can find well priced virtual servers at [Digital Ocean](https://www.digitalocean.com/pricing/) or [Linode](https://www.linode.com/pricing). If this is not an option for you and you have you own server well go for it. For those that just want to practice; [Vagrant](https://www.vagrantup.com/) might be an option as well although working with vagrant is outside the scope of this post.
 
-Now that we have the server (this post assumes it's running Ubunutu 14.04) open a terminal window and let's get started.
+Now that we have the machine (this post assumes it's running Ubuntu 14.04) let's get started.
 
-For this series, our container technology of choice is `Docker` and if you would like to know more about it, [What is Docker?](https://www.docker.com/what-docker) is a good place to start.
+Our container technology of choice is `Docker` and if you would like to know more about it, [What is Docker?](https://www.docker.com/what-docker) is a good place to start.
 
 ### Installing Docker
-Run the following commands in your terminal to install docker.
+Run the following commands in your terminal to install docker; make sure you have the necessary permissions to do install software on your machine.
 
 ```bash
-sudo su
 apt-get update
 
 # install docker prequisites
@@ -41,7 +40,7 @@ apt-get install docker-engine
 service docker start
 ```
 
-Alternatively you can create a file say `docker_install.sh` and copy the content of the above script into it, save the file and change the mode on the file to allow it to be executable `chmod 0555 docker_install.sh`. You can then execute the file by running `./docker_install.sh`
+Alternatively you can create a file called `docker_install.sh` and copy the content of the above script into it, save the file and change the file permissions to make it executable `chmod 0555 docker_install.sh`. You can then execute the file by running `./docker_install.sh`
 
 ### Setting up the GoCD Server
 
@@ -307,7 +306,12 @@ done
 You should now have a running a agent container and you can see that by running `$ docker ps` which will show a list of running containers. Look out for a container named `gocd_agent_1`.  
 The reason there is a `1` at the indicates the number of the gocd agent. With the script above, you can create multiple agents by assigning the `NUMBER_OF_AGENTS` variable a value of the number of agents you want. You can have as many agents as you wish. In fact this is good because you can have parallel builds taking place.
 
-The last step in this process is not make sure the agents are registered with the gocd server otherwise they will not be useful. To do that;
+The last step in the process is to make sure the agents are registered with the gocd server otherwise they will not be used for building. To do that;
 
-1. open the GoCD server by going to `http://localhost:8153`
-2.
+1. Open the GoCD server by going to `http://localhost:8153`
+2. Go to the `Agents` tab and you should see a list of agents
+3. Select the agents you want to register and click `Enable`.
+
+Now the agents are part of our build cloud and can start building.
+
+The next part of the series will focus on configuring a build pipeline to achieve continuous delivery. I hope you enjoy this process let me know in the comments what your experience has been.
