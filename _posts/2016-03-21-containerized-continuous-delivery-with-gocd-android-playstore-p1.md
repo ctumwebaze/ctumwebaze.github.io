@@ -3,12 +3,14 @@ layout: post
 title: Containerized Continuous Delivery with GoCD and Android PlayStore Part 1
 categories: android
 ---
-This is the first part in a series about Continuous Delivery with GoCD and the Android PlayStore. In this series, i will be talking about automated delivery an android application right through development to production.
+This is the first part in a series about Continuous Delivery with [GoCD](https://www.go.cd/) and the [Android PlayStore](https://play.google.com/store). The series  will be focusing on automated delivery of an android application right through development to production.
 
-Continuous Delivery is really about releasing software frequently where every change to the system is releasable. This can be automated or by a push of a button and this comes with many advantages one of them being taking the ritual out of releasing software.  
-You have probably been part of a team that has released software especially in the enterprise setting where before the software can go into production, it goes through multiple sign offs/approvals and this can be weeks or months before you can see changes in production. This of course has it's disadvantages but i will not go into details. This book [Continuous Delivery](http://www.amazon.com/gp/product/0321601912) does a good job on the topic.
+Continuous Delivery is really about releasing software frequently where every change to the system is releasable. This can be automated or done manually by a push of a button. This comes with many advantages one of them being; taking the ritual out of releasing software.  
+You have probably been part of a team that has released software especially in the enterprise setting where before the software can go into production, it goes through multiple sign offs/approvals and this can be weeks or months before you can see changes in production. This of course has it's disadvantages but i will not go into details.
 
-At the heart of Continuous Delivery, is [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) and [DevOps](https://en.wikipedia.org/wiki/DevOps) and a number of tools are available to us to achieve continuous delivery and in this first part of the series i will showing you how to setup [GoCD](https://www.go.cd/) in a docker environment to achieve continuous delivery for an android app.
+For further reading about the subject of continuous delivery, this book [Continuous Delivery](http://www.amazon.com/gp/product/0321601912) does a good job on the topic.
+
+At the heart of Continuous Delivery, is [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) and [DevOps](https://en.wikipedia.org/wiki/DevOps) and a number of tools are available to us to achieve continuous delivery and in this part of the series you will see how to setup [GoCD](https://www.go.cd/) in a docker environment to achieve continuous delivery for an android app.
 
 First things first, you will need a box to host you GoCD server and agent(s). You can find well priced virtual servers at [Digital Ocean](https://www.digitalocean.com/pricing/) or [Linode](https://www.linode.com/pricing). If this is not an option for you and you have you own server well go for it. For those that just want to practice; [Vagrant](https://www.vagrantup.com/) might be an option as well although working with vagrant is outside the scope of this post.
 
@@ -308,4 +310,4 @@ The reason there is a `1` at the indicates the number of the gocd agent. With th
 The last step in this process is not make sure the agents are registered with the gocd server otherwise they will not be useful. To do that;
 
 1. open the GoCD server by going to `http://localhost:8153`
-2. 
+2.
