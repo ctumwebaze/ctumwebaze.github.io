@@ -66,7 +66,7 @@ RUN (ln -s -f /bin/true /usr/bin/chfn) && \
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 #Download gocd server
-RUN (wget https://download.go.cd/gocd/go-server-15.2.0-2248.zip) && \
+RUN (wget https://download.go.cd/binaries/15.2.0-2248/generic/go-server-15.2.0-2248.zip) && \
     (unzip go-server-15.2.0-2248.zip) && \
     (cp -R go-server-15.2.0 /usr/local) && \
     (mv /usr/local/go-server-15.2.0 /usr/local/go-server) && \
@@ -219,7 +219,7 @@ RUN (mkdir -p $ANDROID_HOME) && \
     (echo 'y' | $ANDROID_HOME/tools/android --silent update sdk --no-ui --force --all --filter android-23)
 
 # Download gocd agent
-RUN (wget https://download.go.cd/gocd/go-agent-15.2.0-2248.zip) && \
+RUN (wget https://download.go.cd/binaries/15.2.0-2248/generic/go-agent-15.2.0-2248.zip) && \
     (unzip go-agent-15.2.0-2248.zip) && \
     (cp -R go-agent-15.2.0 /usr/local) && \
     (mv /usr/local/go-agent-15.2.0 /usr/local/go-agent) && \
