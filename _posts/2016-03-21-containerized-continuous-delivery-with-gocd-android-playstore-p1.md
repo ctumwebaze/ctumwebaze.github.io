@@ -308,7 +308,7 @@ The reason there is a `1` at the indicates the number of the gocd agent. With th
 
 The last step in the process is to make sure the agents are registered with the gocd server otherwise they will not be used for building. To do that;
 
-1. Open the GoCD server by going to `http://localhost:8153`
+1. Open the GoCD server by going to `http://localhost:8153`. `localhost` can be interchanged with the ip address of your server or the domain name.
 2. Go to the `Agents` tab and you should see a list of agents
 3. Select the agents you want to register and click `Enable`.
 
