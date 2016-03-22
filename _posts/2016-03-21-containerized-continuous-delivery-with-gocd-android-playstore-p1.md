@@ -102,7 +102,7 @@ fi
 1. Create a file `build.sh` place it in the `/opt/gocd/server` folder
 2. Copy & paste the above snippet into it and save the file.
 3. Change the necessary permissions to the file `chmod 0555 /opt/gocd/server/build.sh`
-4. Execute the file from the terminal `$./opt/gocd/server/build.sh`
+4. Execute the file from the terminal `$/opt/gocd/server/build.sh`
 
 This will build a docker image based on the `Dockerfile` you created in step 1. And you can see which images are available by running `$ docker images` on the terminal.
 
@@ -161,7 +161,7 @@ fi
 1. Create a file `run.sh` place it in the `/opt/gocd/server` folder
 2. Copy & paste the above snippet into it and save the file.
 3. Change the necessary permissions to the file `chmod 0555 /opt/gocd/server/run.sh`
-4. Execute the file from the terminal `$./opt/gocd/server/run.sh`
+4. Execute the file from the terminal `$/opt/gocd/server/run.sh`
 
 With this you should have a running container; to see which containers are currently running, in the terminal run `$ docker ps` and the output should show a running gocd_server container.
 
@@ -255,7 +255,7 @@ fi
 1. Create a file `build.sh` and place it in the `/opt/gocd/agent` folder
 2. Copy & Paste the above snippet into it and save the file.
 3. Change the necessary permissions to the file `chmod 0555 /opt/gocd/agent/build.sh`
-4. Execute the file from the terminal `$. /opt/gocd/agent/build.sh`
+4. Execute the file from the terminal `$ /opt/gocd/agent/build.sh`
 
 This will build hthe docker image based on the `Dockerfile` created in step 1. You can check that the image was created by running `$ docker images` on the terminal.
 
@@ -301,7 +301,7 @@ done
 1. Create a file `run.sh` place it in the `/opt/gocd/agent` folder
 2. Copy & Paste the above snippet into it and save it.
 3. Change the necessary permissions to the file `chmod 0555 /opt/gocd/agent/run.sh`
-4. Execute the file from the terminal `$ ./opt/gocd/agent/run.sh`
+4. Execute the file from the terminal `$ /opt/gocd/agent/run.sh`
 
 You should now have a running a agent container and you can see that by running `$ docker ps` which will show a list of running containers. Look out for a container named `gocd_agent_1`.  
 The reason there is a `1` at the indicates the number of the gocd agent. With the script above, you can create multiple agents by assigning the `NUMBER_OF_AGENTS` variable a value of the number of agents you want. You can have as many agents as you wish. In fact this is good because you can have parallel builds taking place.
