@@ -314,4 +314,6 @@ The last step in the process is to make sure the agents are registered with the 
 
 Now the agents are part of our build cloud and can start building.
 
+There are a number of things that have not been dealt with in this post regarding your Continuous Delivery environment i.e. Security, Backup etc. With regard to security, it's of utmost importance that you secure your environment because it can be the weakest link in your entire infrastructure. See [Handling authentication with GoCD](https://docs.go.cd/current/configuration/dev_authentication.html) on how to configure an authentication mechanism for your server.
+
 The next part of the series will focus on configuring a build pipeline to achieve continuous delivery. I hope you enjoy this process let me know in the comments what your experience has been.
