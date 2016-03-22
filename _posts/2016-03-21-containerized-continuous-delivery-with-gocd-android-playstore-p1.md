@@ -242,7 +242,7 @@ Now that the `Dockerfile` is ready, the next step is to build a docker image for
 ```bash
 # building the gocd agent docker image
 echo "************ creating gocd agent image ******************"
-GOCD_DOCKER_IMAGE='nkola/gocd_agent'
+GOCD_DOCKER_IMAGE='gocd_agent'
 docker build -t $GOCD_DOCKER_IMAGE /opt/gocd/agent
 
 # removing dangling images
