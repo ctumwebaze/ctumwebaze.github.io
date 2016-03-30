@@ -167,7 +167,7 @@ With this you should have a running container; to see which containers are curre
 
 Once the GoCD server in the container has started up, you can fire up your browser and go to `http://host:8153/` and you should see a page similar to the one below;
 
-![GoCD Server Screenshot]()
+![GoCD Server Screenshot](/images/gocd_server_page.png)
 
 Even with a running server, You are not ready to start the deployment process. You will need to setup agents that will be responsible for the building/deployment process.
 
