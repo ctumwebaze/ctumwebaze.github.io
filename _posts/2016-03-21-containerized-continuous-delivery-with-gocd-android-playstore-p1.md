@@ -263,6 +263,7 @@ This will build hthe docker image based on the `Dockerfile` created in step 1. Y
 With the image done, create a container from the agent image.
 
 ```bash
+GOCD_DOCKER_IMAGE='gocd_agent'
 agent_counter=0
 NUMBER_OF_AGENTS=1
 
