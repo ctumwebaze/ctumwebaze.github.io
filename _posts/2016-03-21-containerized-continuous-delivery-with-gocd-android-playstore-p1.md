@@ -304,7 +304,7 @@ done
 4. Execute the file from the terminal `$ /opt/gocd/agent/run.sh`
 
 You should now have a running a agent container and you can see that by running `$ docker ps` which will show a list of running containers. Look out for a container named `gocd_agent_1`.  
-The reason there is a `1` at the indicates the number of the gocd agent. With the script above, you can create multiple agents by assigning the `NUMBER_OF_AGENTS` variable a value of the number of agents you want. You can have as many agents as you wish. In fact this is good because you can have parallel builds taking place.
+The reason there is a `1` at the end indicates the number of the gocd agent. With the script above, you can create multiple agents by assigning the `NUMBER_OF_AGENTS` variable a value of the number of agents you want. You can have as many agents as you wish. In fact this is good because you can have parallel builds taking place.
 
 The last step in the process is to make sure the agents are registered with the gocd server otherwise they will not be used for building. To do that;
 
