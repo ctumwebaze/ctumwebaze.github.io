@@ -213,9 +213,9 @@ RUN (mkdir -p $ANDROID_HOME) && \
     (echo 'y' | $ANDROID_HOME/tools/android --silent update sdk --no-ui --force --all --filter extra-android-m2repository) && \
     (echo 'y' | $ANDROID_HOME/tools/android --silent update sdk --no-ui --force --all --filter extra-android-support) && \
     (echo 'y' | $ANDROID_HOME/tools/android --silent update sdk --no-ui --force --all --filter extra-google-m2repository) && \
-    (echo 'y' | $ANDROID_HOME/tools/android --silent update sdk --no-ui --force --all --filter android-19)
-    (echo 'y' | $ANDROID_HOME/tools/android --silent update sdk --no-ui --force --all --filter android-21)
-    (echo 'y' | $ANDROID_HOME/tools/android --silent update sdk --no-ui --force --all --filter android-22)
+    (echo 'y' | $ANDROID_HOME/tools/android --silent update sdk --no-ui --force --all --filter android-19) && \
+    (echo 'y' | $ANDROID_HOME/tools/android --silent update sdk --no-ui --force --all --filter android-21) && \
+    (echo 'y' | $ANDROID_HOME/tools/android --silent update sdk --no-ui --force --all --filter android-22) && \
     (echo 'y' | $ANDROID_HOME/tools/android --silent update sdk --no-ui --force --all --filter android-23)
 
 # Download gocd agent
