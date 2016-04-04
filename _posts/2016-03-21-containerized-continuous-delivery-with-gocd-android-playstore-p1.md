@@ -58,7 +58,7 @@ RUN (ln -s -f /bin/true /usr/bin/chfn) && \
     (apt-add-repository ppa:webupd8team/java -y) && \
     (apt-get update -y) && \
     (echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections) && \
-    (apt-get install oracle-java8-installer -y --no-install-recommends) && \
+    (apt-get install -y --no-install-recommends oracle-java8-installer) && \
     (apt-get install -y --no-install-recommends build-essential git openssh-client curl wget rsync lib32stdc++6 lib32z1 unzip) && \
     (apt-get clean) && \
     (rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*)
@@ -188,7 +188,7 @@ RUN (ln -s -f /bin/true /usr/bin/chfn) && \
     (apt-add-repository ppa:webupd8team/java -y) && \
     (apt-get update -y) && \
     (echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections) && \
-    (apt-get install oracle-java8-installer -y --no-install-recommends) && \
+    (apt-get install -y --no-install-recommends oracle-java8-installer) && \
     (apt-get install -y --no-install-recommends build-essential git openssh-client curl wget rsync lib32stdc++6 lib32z1 unzip) && \
     (apt-get clean) && \
     (rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*)
