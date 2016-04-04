@@ -124,7 +124,7 @@ read -r -d '' GOCD_CONTAINER_START <<-"EOM"
     # start the container in the event it was removed.
     echo "*********** starting new $CONTAINER_NAME ********"
     docker run -d --restart=always -t \
-      -e GO_SERVER=127.0.0.1 \
+      -e GO_SERVER=192.168.50.4 \
       -e GO_SERVER_PORT=8153 \
       --name $CONTAINER_NAME gocd_agent
   fi

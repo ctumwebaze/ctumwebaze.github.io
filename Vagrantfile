@@ -71,10 +71,12 @@ Vagrant.configure(2) do |config|
   config.vm.define 'gocd_server', autostart: false do |gocd_server|
     gocd_server.vm.network :forwarded_port, host: 8153, guest: 8153
     gocd_server.vm.network :forwarded_port, host: 8154, guest: 8154
+    gocd_server.vm.network :private_network, ip: "192.168.50.4"
     gocd_server.vm.provision :shell, path: 'gocd/server.sh'
   end
 
   config.vm.define 'gocd_agent', autostart: false do |gocd_agent|
+    gocd_agent.vm.network :private_network, ip: "192.168.50.5"
     gocd_agent.vm.provision :shell, path: 'gocd/agent.sh'
   end
 end
