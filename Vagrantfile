@@ -49,6 +49,7 @@ Vagrant.configure(2) do |config|
 
     # Customize the amount of memory on the VM:
     vb.memory = "2048"
+    vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
   end
   #
   # View the documentation for the provider you are using for more
@@ -72,11 +73,13 @@ Vagrant.configure(2) do |config|
     gocd_server.vm.network :forwarded_port, host: 8153, guest: 8153
     gocd_server.vm.network :forwarded_port, host: 8154, guest: 8154
     gocd_server.vm.network :private_network, ip: "192.168.50.4"
+    gocd_server.vm.network :public_network, use_dhcp_assigned_default_route: true
     gocd_server.vm.provision :shell, path: 'gocd/server.sh'
   end
 
   config.vm.define 'gocd_agent', autostart: false do |gocd_agent|
     gocd_agent.vm.network :private_network, ip: "192.168.50.5"
+#    gocd_agent.vm.network :public_network, use_dhcp_assigned_default_route: true, bridge: "en0: Wi-Fi (AirPort)"
     gocd_agent.vm.provision :shell, path: 'gocd/agent.sh'
   end
 end
