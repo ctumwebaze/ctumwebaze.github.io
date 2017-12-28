@@ -181,6 +181,10 @@
 
     > li {
         margin-bottom: $spacing-unit;
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 5px;
     }
 }
 

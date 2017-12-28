@@ -6,14 +6,19 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: My Android Escapades
+title: Tumwebaze
 email: ctumwebaze@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This is my journey working with the android platform. Exploring the it's gems, how certain things are done on it and what you can do with it..
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://android.blogs.tumwebaze.com" # the base hostname & protocol for your site
+url: "http://www.tumwebaze.com" # the base hostname & protocol for your site
 twitter_username: ctumwebaze
 github_username:  ctumwebaze
 
 # Build settings
 markdown: kramdown
+exclude:
+  - docker
+  - Gemfile
+  - Gemfile.lock
+  - Dockerfile
