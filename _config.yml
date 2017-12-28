@@ -14,7 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.tumwebaze.com" # the base hostname & protocol for your site
 twitter_username: ctumwebaze
 github_username:  ctumwebaze
-
+google_analytics: UA-75143964-1
 # Build settings
 markdown: kramdown
 exclude:
