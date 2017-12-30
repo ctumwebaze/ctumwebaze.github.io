@@ -4,6 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Hi, my name is Charles Tumwebaze and this is a blog about my journey exploring the android platform.
+Charles Tumwebaze is a software developer with over ten years experience in agile software delivery.
 
-I have been working in the tech space since 2006 and currently working as a software development consultant with [ThoughtWorks](https://www.thoughtworks.com/) in South Africa.
+Charles currently works with [...](#). In the past, he worked as a software development consultant with [ThoughtWorks](https://www.thoughtworks.com/) in Kampala and Johannesburg.
+As a software developer, Charles has worked in the Education, Non-Profit, Insurance and Financial Services space. In addition, Charles has experience in DevOps, where he has worked as a continous delivery and infrastructure automation engineer.
+
+Charles holds a Bachelor of Science degree in Computer Science from Makerere University and is also a member of the Institute of Information Technology Professionals SouthAfrica (IITPSA).
